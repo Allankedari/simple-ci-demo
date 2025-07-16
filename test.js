@@ -1,9 +1,6 @@
+// test.js
+const assert = require('assert');
 const add = require('./index');
 
-if (add(10, 5) === 15) {
-  console.log('✅ Test Passed');
-  process.exit(0);
-} else {
-  console.log('❌ Test Failed');
-  process.exit(1);
-}
+assert.strictEqual(add(3, 4), 7); // <-- change values from (2, 3) to (3, 4)
+console.log("Test passed");
